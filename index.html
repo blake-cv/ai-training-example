@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Rivera — Designer & Developer</title>
+  <meta name="description" content="Portfolio of Alex Rivera, a designer and developer building playful, fast, human interfaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo">ar<span>.</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="pill">Say hello</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow reveal"><i class="dot"></i> Available for new projects</p>
+      <h1 class="reveal">
+        I build <span class="grad">interfaces</span><br>
+        that feel <span class="typed" id="typed"></span><span class="caret">|</span>
+      </h1>
+      <p class="lede reveal">
+        Hi, I'm Alex Rivera — a designer and developer crafting fast, playful,
+        human-centered products for the web.
+      </p>
+      <div class="cta reveal">
+        <a href="#work" class="btn primary">See my work <span>→</span></a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+      <div class="stats reveal">
+        <div><b data-count="8">0</b><small>years building</small></div>
+        <div><b data-count="42">0</b><small>projects shipped</small></div>
+        <div><b data-count="15">0</b><small>happy clients</small></div>
+      </div>
+      <a class="scroll" href="#work" aria-label="Scroll to work"><span></span></a>
+    </section>
+
+    <section id="work" class="section">
+      <div class="head reveal">
+        <p class="eyebrow">01 / Selected work</p>
+        <h2>Things I've made</h2>
+      </div>
+      <div class="bento">
+        <article class="card tilt big reveal" style="--h: 265">
+          <div class="art a1"></div>
+          <div class="meta"><span class="tag">Web app</span><h3>Orbit</h3>
+          <p>A calm project-planning tool with a real-time canvas and keyboard-first everything.</p></div>
+        </article>
+        <article class="card tilt reveal" style="--h: 190">
+          <div class="art a2"></div>
+          <div class="meta"><span class="tag">Brand</span><h3>Fernwood</h3>
+          <p>Identity and storefront for a slow-fashion label.</p></div>
+        </article>
+        <article class="card tilt reveal" style="--h: 330">
+          <div class="art a3"></div>
+          <div class="meta"><span class="tag">Mobile</span><h3>Pulse</h3>
+          <p>A habit tracker that rewards consistency, not streaks.</p></div>
+        </article>
+        <article class="card tilt wide reveal" style="--h: 20">
+          <div class="art a4"></div>
+          <div class="meta"><span class="tag">Data viz</span><h3>Tidewatch</h3>
+          <p>Interactive ocean-temperature explorer used by two research teams.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="head reveal">
+        <p class="eyebrow">02 / About</p>
+        <h2>Design brain,<br>engineer's hands.</h2>
+      </div>
+      <div class="about-body reveal">
+        <p>I started out sketching interfaces on napkins and ended up obsessed with making them real.
+        I like the space where craft meets performance: a page that loads instantly and still
+        makes you smile.</p>
+        <p>Outside of work you'll find me climbing, brewing questionable coffee experiments,
+        and collecting mechanical keyboards I definitely don't need.</p>
+        <div class="terminal" role="img" aria-label="Decorative terminal">
+          <div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="c">$</span> whoami
+alex — designer &amp; developer
+<span class="c">$</span> cat focus.txt
+design systems · motion · performance
+<span class="c">$</span> status
+<span class="ok">●</span> open to interesting work</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="head reveal">
+        <p class="eyebrow">03 / Toolkit</p>
+        <h2>What I work with</h2>
+      </div>
+      <div class="chips reveal">
+        <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node</span>
+        <span>CSS &amp; Motion</span><span>Figma</span><span>WebGL</span><span>Accessibility</span>
+        <span>Design Systems</span><span>Postgres</span><span>Performance</span><span>Prototyping</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">04 / Contact</p>
+        <h2>Let's make something<br><span class="grad">great</span> together.</h2>
+        <a class="btn primary big" href="mailto:hello@example.com">hello@example.com</a>
+        <div class="socials">
+          <a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Dribbble</a><a href="#">Read.cv</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Alex Rivera</span>
+    <span>Demo site · served locally</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
